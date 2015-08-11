@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 try:
     from setuptools import setup
 except ImportError:
@@ -26,6 +25,7 @@ requirements = [
 test_requirements = [
 
 ]
+
 
 def get_version(package):
     """
@@ -59,7 +59,6 @@ if sys.argv[-1] == 'publish':
     print("  git tag -a %(version)s -m 'version %(version)s'" % args)
     print("  git push --tags")
     sys.exit()
-
 
 setup(
     name='tapioca-disqus',
