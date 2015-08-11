@@ -5,4 +5,4 @@ __email__ = 'marctc@gmail.com'
 __version__ = '0.1'
 
 
-from tapioca_disqus import Disqus
+from .tapioca_disqus import Disqus

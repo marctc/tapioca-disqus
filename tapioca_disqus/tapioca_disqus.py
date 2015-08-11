@@ -1,10 +1,8 @@
 # coding: utf-8
 
-from tapioca import (
-    TapiocaAdapter, generate_wrapper_from_adapter, JSONAdapterMixin)
+from tapioca import TapiocaAdapter, generate_wrapper_from_adapter, JSONAdapterMixin
 
-
-from resource_mapping import RESOURCE_MAPPING
+from .resource_mapping import RESOURCE_MAPPING
 
 
 class DisqusClientAdapter(JSONAdapterMixin, TapiocaAdapter):
@@ -31,10 +29,3 @@ class DisqusClientAdapter(JSONAdapterMixin, TapiocaAdapter):
             return {'url': '{}&cursor='.format(response.url, next_val)}
 
 Disqus = generate_wrapper_from_adapter(DisqusClientAdapter)
-
-if __name__ == '__main__':
-    d = Disqus(api_secret='GuTZDx1d0Tqs93OK85PmJhEvLX30X6V65DJJAVDCGFXuQeHx9TUJLDJd76fuQDw5')
-    #f = d.threads_details().get(params={'forum': 'apsldev', 'thread': 'ident:20'})
-    f = d.threads_list().get(params={'forum': 'apsldev'})
-    for t in f().pages():
-        print(t)
