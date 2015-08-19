@@ -17,9 +17,7 @@ For example, if we want to call __threads/details/__ method we can do the follow
 from tapioca_disqus import Disqus
 
 disqus = Disqus(api_secret='your-disqus-api-secret')
-
 thread = disqus.threads_details().get(params={'thread': '42'})
-
 print(thread.response.id().data())  # prints '42'
 ```
 
