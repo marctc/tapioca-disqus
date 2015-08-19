@@ -9,13 +9,15 @@ pip install tapioca-disqus
 ``` python
 from tapioca_disqus import Disqus
 
+disqus = Disqus(api_secret='your-disqus-api-secret')
 
-api = Disqus()
+thread = disqus.threads_details().get(params={'thread': '42'})
 
+thread().data()
 ```
 
-No more documentation needed.
+## More
 
 - Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/latest/quickstart/)
-- Explore this package using iPython
+- Explore this package using ipython
 - Have fun!
