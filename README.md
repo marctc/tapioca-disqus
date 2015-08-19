@@ -20,7 +20,7 @@ disqus = Disqus(api_secret='your-disqus-api-secret')
 
 thread = disqus.threads_details().get(params={'thread': '42'})
 
-print(thread().data()['response']['id'])  # prints '42'
+print(thread.response.id().data())  # prints '42'
 ```
 
 All methods should be called with snake_case naming in order to fit Python convention. If we want to execute __forums/listFollowers__
