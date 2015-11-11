@@ -1,6 +1,6 @@
 # tapioca-disqus
 
-Disqus API wrapper implemented with tapioca. 
+Disqus API wrapper implemented with [tapioca-wrapper](https://github.com/vintasoftware/tapioca-wrapper). 
 
 ## Installation
 ```
@@ -26,6 +26,6 @@ API method we should use `disqus.forums_list_followers()` method.
 
 ## More
 
-- Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/latest/quickstart/)
+- Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/latest/quickstart.html/)
 - Explore this package using ipython
 - Have fun!
