@@ -20,8 +20,7 @@ except (IOError, ImportError):
 
 package = 'tapioca_disqus'
 requirements = [
-    'tapioca-wrapper<0.6.0',
-    
+    'tapioca-wrapper<2',
 ]
 test_requirements = [
 
