@@ -24,6 +24,14 @@ print(thread.response.id().data())  # prints '42'
 All methods should be called with snake_case naming in order to fit Python convention. If we want to execute __forums/listFollowers__
 API method we should use `disqus.forums_list_followers()` method.
 
+### Serialization
+- datetime
+- Decimal
+
+### Deserialization
+- datetime
+- Decimal
+
 ## More
 
 - Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/latest/quickstart.html/)
